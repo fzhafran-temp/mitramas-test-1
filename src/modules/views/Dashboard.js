@@ -1,23 +1,34 @@
-import logo from '../../logo.svg';
 import './Dashboard.css';
 
+import { PageHeader } from 'antd';
+
 function Dashboard() {
+  const routes = [
+    {
+      path: '/',
+      breadcrumbName: 'Perusahaan',
+    },
+    {
+      path: 'first',
+      breadcrumbName: 'Mitramas Infosys Global',
+    }
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div class="header">
+        <PageHeader
+          className="site-page-header"
+          breadcrumb={{ routes }}
+        />
+        <div class="profile-container">
+          <img src={require('../../assets/img/search-alert.png')} alt="search-and-alert"/>
+          <div class="profile">
+            <div class="profile-image" />
+            John Doe
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

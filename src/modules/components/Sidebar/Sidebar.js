@@ -19,9 +19,10 @@ function Sidebar() {
         mode="vertical"
         inlineCollapsed={true}
       >
-        <SubMenu key="1" icon={<MailOutlined />} title="Navigation One">
+        <img src={require('../../../assets/img/logo.png')} class='logo' alt="logo"/>
+        <SubMenu key="0" icon={<MailOutlined />} title="Navigation One">
         </SubMenu>
-        <SubMenu key="sub2" icon={<AppstoreOutlined />} title="Navigation Two">
+        <SubMenu key="1" icon={<AppstoreOutlined />} title="Navigation Two">
         </SubMenu>
         <SubMenu key="sub4" icon={<SettingOutlined />} title="Navigation Three">
         </SubMenu>

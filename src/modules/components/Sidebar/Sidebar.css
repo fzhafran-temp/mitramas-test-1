@@ -1,6 +1,7 @@
 .Sidebar {
   position: fixed;
   left: 0;
+  box-shadow: 5px 0px 15px -3px rgba(0,0,0,0.13);
 }
 
 .Sidebar ul {
@@ -11,4 +12,8 @@
 .ant-menu-submenu-selected {
   color: black !important;
   background-color: rgb(235, 242, 236);
+}
+
+.logo {
+  margin-bottom: 30px;
 }

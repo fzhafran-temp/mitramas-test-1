@@ -1,0 +1,14 @@
+.Sidebar {
+  position: fixed;
+  left: 0;
+}
+
+.Sidebar ul {
+  max-width: 70px;
+  min-height: 100vh;
+}
+
+.ant-menu-submenu-selected {
+  color: black !important;
+  background-color: rgb(235, 242, 236);
+}
